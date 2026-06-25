@@ -1,6 +1,6 @@
-# Clicker
+# Unity-Android-Clicker
 
-一个不依赖 Gradle 的安卓连点器工程，使用本机 Unity 附带的 Android SDK/OpenJDK 工具链构建 APK。
+一个中文 Android 连点器项目，可执行重复点击、悬浮靶标连点、脚本录制和脚本回放。工程不依赖 Gradle，直接使用本机 Unity 附带的 Android SDK/OpenJDK 工具链构建 APK。
 
 ## 功能
 
@@ -39,7 +39,7 @@ Builds\Clicker.apk
 
 - 应用名称、无障碍服务名称：`app/src/main/res/values/strings.xml`
 - 主界面按钮和状态文本：`app/src/main/java/com/localclicker/autoclicker/MainActivity.java`
-- 悬浮窗按钮、靶标、连点/脚本回放逻辑：`app/src/main/java/com/localclicker/autoclicker/ClickAccessibilityService.java`
+- 悬浮窗按钮、靶标、连点和脚本回放逻辑：`app/src/main/java/com/localclicker/autoclicker/ClickAccessibilityService.java`
 - 脚本录制画布：`app/src/main/java/com/localclicker/autoclicker/RecordScriptActivity.java`
 - 脚本保存格式和数量上限：`app/src/main/java/com/localclicker/autoclicker/ScriptStore.java`
 - 包名、Activity、无障碍服务声明：`AndroidManifest.xml`
