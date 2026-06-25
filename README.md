@@ -2,6 +2,18 @@
 
 一个中文 Android 连点器项目，可执行重复点击、悬浮靶标连点、脚本录制和脚本回放。工程不依赖 Gradle，直接使用本机 Unity 附带的 Android SDK/OpenJDK 工具链构建 APK。
 
+English: A lightweight Android auto-clicker with floating controls, script recording, and script playback.
+
+## 下载 APK
+
+推荐从 GitHub Releases 下载：
+
+```text
+https://github.com/lsjr666/Unity-Android-Clicker/releases/latest
+```
+
+也可以在本仓库的 `Builds/Clicker.apk` 找到当前构建产物。
+
 ## 功能
 
 - 悬浮靶标选择连点位置
@@ -21,19 +33,19 @@ D:\2022.3.62f2c1\Editor\Data\PlaybackEngines\AndroidPlayer
 
 如果你的 Unity 安装路径不同，修改 [build.ps1](build.ps1) 里的 `$UnityAndroid`。
 
-构建：
+构建 APK：
 
 ```powershell
 .\build.ps1
 ```
 
-输出：
+输出文件：
 
 ```text
 Builds\Clicker.apk
 ```
 
-## 修改内容
+## 如何修改
 
 常用入口：
 
@@ -53,7 +65,7 @@ Builds\Clicker.apk
 
 ## 安装和权限
 
-安装 `Builds\Clicker.apk` 后，需要手动开启：
+安装 APK 后，需要手动开启：
 
 - 无障碍服务：用于执行点击和滑动手势
 - 悬浮窗权限：用于显示控制按钮和靶标
@@ -63,3 +75,9 @@ Builds\Clicker.apk
 ## 注意
 
 安卓普通悬浮窗无法同时“透传触摸到底下应用”并“录制触摸坐标”。当前悬浮录制采用安全透明覆盖层：能录制点击/滑动，但触摸不会传递到底下应用。
+
+请只在自己的设备和允许自动化的场景中使用。
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
