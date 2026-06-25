@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">连点器</string>
+    <string name="accessibility_service_label">连点器服务</string>
+    <string name="accessibility_service_description">执行连点和脚本回放。</string>
+</resources>
